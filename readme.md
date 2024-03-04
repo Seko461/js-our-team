@@ -21,6 +21,7 @@ Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
 console.log() è nostro amico.Buon lavoro!
 
+```javascript
  
  const team = [
    {
@@ -54,3 +55,4 @@ console.log() è nostro amico.Buon lavoro!
      image: 'barbara-ramos-graphic-designer.jpg',
    },
  ];
+ ```
