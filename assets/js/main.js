@@ -49,8 +49,16 @@ for (const key in team) {
 
 // stampare le stesse informazioni su DOM sottoforma di stringhe
 
-for (let i = 0; i < team.length; i++) {
-    const element = team[i];
-    document.write(element);
 
+const rowElement = document.querySelector('.row');
+
+
+for (let i = 0; i < team.length; i++) {
+    console.log(team[i]);
+    let element = team[i];
+
+    let markUp = `<div class="col">
+        <div class="card">${element.name, element.role, element.image}</div>
+    </div>`
+    rowElement.insertAdjacentHTML('beforeend', markUp)
 }
