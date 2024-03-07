@@ -57,8 +57,9 @@ for (let i = 0; i < team.length; i++) {
     console.log(team[i]);
     let element = team[i];
 
-    let markUp = `<div class="col">
-        <div class="card">${element.name, element.role, element.image}</div>
+    let markUp = `<div class="col-4">
+        <div class="card d-flex text-center rounded m-3 p-3"><h3>${element.name}</h3><h4> ${element.role}</h4>
+        <img height="300 "src="./assets/img/${element.image}" class="rounded" alt=""></div>
     </div>`
     rowElement.insertAdjacentHTML('beforeend', markUp)
 }
