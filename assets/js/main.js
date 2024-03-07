@@ -40,9 +40,17 @@ const team = [
 
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
-for (const key in team) {
 
+
+for (const key in team) {
     console.log(team[key]);
 
-};
+}
 
+// stampare le stesse informazioni su DOM sottoforma di stringhe
+
+for (let i = 0; i < team.length; i++) {
+    const element = team[i];
+    document.write(element);
+
+}
